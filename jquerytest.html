@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="/Users/nawshad.hoossanbuksh/Sailpoint/Training/Java/JQuery/jquery-2.2.3.min.js" />
+</head>
+<script>
+    window.jQuery()||document.write('<script src="jQeury-2.2.3.min.js><\/script>"')
+</script>
+<script type="text/javascript">
+    window.onload = function(){
+           // alert('Window Loaded');
+        };
+        $(document).ready(function(){
+           //alert('Document DOM loaded'); 
+           $('#myContent').html('Hello Wold');
+           $(':input').each(function(){
+               var elem = $(this);
+               alert(elem.val());
+           });
+        });
+</script>
+
+<body>
+    <div id="myContent">
+        My JQuery enabled page!
+    </div>
+    <form id="form1" runat="server">
+        <table style="width:300px;">
+            <tr>
+                <td style="width:30%;">First Name</td>
+                <td style="width:70%;"><input id="FNTextBox" Value="John" type="text" /></td>
+            </tr>
+            <tr>
+                <td style="width:30%;">Last Name</td>
+                <td style="width:70%;"><input id="FNTextBox" Value="Doe " /></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="SubmitButton" type="button" value="Submit" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>
